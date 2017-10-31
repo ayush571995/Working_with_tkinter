@@ -26,8 +26,10 @@ insertBut.pack(side=LEFT, padx=2, pady=2)
 print_but = Button(toolbar, text="Print", command=donothing)
 print_but.pack(side=LEFT, padx=2, pady=2)
 toolbar.pack(side=TOP, fill=X)
+
+
+# ***status bar *****
+
+status = Label(root, text='Preparing to do nothing', bd=1, relief=SUNKEN, anchor=W)
+status.pack(side=BOTTOM, fill=X)
 root.mainloop()
-
-
-
-
